@@ -8,51 +8,61 @@
 
 import SwiftUI
 
+
+let emptyProgress = [
+    (0, 0, 0),
+    (0, 0, 0),
+    (0, 0, 0)
+]
+
+
 struct PromptView: View {
 
-    let prompt: Prompt
-    
     @EnvironmentObject var speechRecognizer: SpeechRecognizer
+    
+    var prompt: Prompt
 
     
-    func getIcon() -> String {
-        prompt.isValidated ? "checkmark.circle.fill" : "questionmark.circle.fill"
-    }
-    
-    func getBackgroundColor() -> Color {
-        prompt.isValidated ? Color.white : Color.init(red: 251/255, green: 156/255, blue: 124/255)
-    }
-    
-    func getForegroundColor() -> Color {
-        prompt.isValidated ? Color.init(red: 251/255, green: 156/255, blue: 124/255) : Color.white
-    }
-    
     var body: some View {
-        HStack {
-            Image(systemName: getIcon())
-                .font(.largeTitle)
-                .foregroundColor(getForegroundColor())
-                .padding(.trailing)
-            Text(prompt.displayText)
-                .font(.custom("Baloo2-Medium", size: 28))
-                .foregroundColor(getForegroundColor())
-            Spacer()
-        }
-        .padding()
-        .padding(.horizontal, 5)
-        .background(getBackgroundColor())
-        .cornerRadius(15)
-        .onReceive(speechRecognizer.objectWillChange) { _ in
-            self.prompt.validate(self.speechRecognizer.transcription)
-        }
+        let looksValid = prompt.willProbablyBeValid || prompt.isValid
+        let imageName = looksValid ? "checkmark.circle" : "questionmark.circle"
+        
+        return (
+            
+            HStack {
+                Image(systemName: imageName)
+                    .font(.largeTitle)
+                    .padding(.trailing)
+                Text(prompt.displayText)
+                    .font(.custom("Baloo2-Medium", size: 28))
+                Spacer()
+                
+            }
+            .padding()
+            .padding(.horizontal, 5)
+            .cornerRadius(15)
+            .onReceive(speechRecognizer.objectWillChange) { _ in
+                self.validate()
+            }
+        )
+    }
+    
+    func validate() {
+        prompt.validate(self.speechRecognizer.transcription)
     }
 }
 
+
 struct PromptView_Previews: PreviewProvider {
-    static var prompt = Prompt(displayText: "How can I help you today?")
+    static var prompt = Prompt(
+        displayText: "How can I help you today?",
+        variants: []
+    )
     
     static var previews: some View {
         PromptView(prompt: prompt)
             .previewLayout(.sizeThatFits)
+            .environmentObject(Prompts())
+            .environmentObject(SpeechRecognizer())
     }
 }

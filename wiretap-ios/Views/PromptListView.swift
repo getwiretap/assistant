@@ -22,5 +22,7 @@ struct PromptListView: View {
 struct PromptListView_Previews: PreviewProvider {
     static var previews: some View {
         PromptListView()
+            .environmentObject(SpeechRecognizer())
+            .environmentObject(Prompts())
     }
 }

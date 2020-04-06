@@ -20,7 +20,7 @@ public class SpeechRecognizer: ObservableObject {
     
     @Published var isMicEnabled = false
     @Published var isRecording = false
-    @Published var transcription = ""
+    @Published var transcription = Words("")
     
     
     func requestPermission() {
@@ -70,13 +70,13 @@ public class SpeechRecognizer: ObservableObject {
             
             if let result = result {
 
-                let bestTranscription = result.bestTranscription.formattedString
-                self.transcription = bestTranscription
+                self.transcription = Words(result.bestTranscription.formattedString)
                 
                 isFinal = result.isFinal
             }
             
             if error != nil || isFinal {
+                
                 // Stop recognizing speech if there is a problem.
                 self.audioEngine.stop()
                 inputNode.removeTap(onBus: 0)
@@ -85,7 +85,7 @@ public class SpeechRecognizer: ObservableObject {
                 self.recognitionTask = nil
 
                 self.isRecording = false
-                self.transcription = ""
+                self.transcription = Words("")
             }
         }
 

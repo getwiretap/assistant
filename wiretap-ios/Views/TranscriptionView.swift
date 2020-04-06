@@ -13,7 +13,7 @@ struct TranscriptionView: View {
     @EnvironmentObject var speechRecognizer: SpeechRecognizer
     
     var body: some View {
-        Text(speechRecognizer.transcription)
+        Text(speechRecognizer.transcription.formatedString)
     }
 }
 

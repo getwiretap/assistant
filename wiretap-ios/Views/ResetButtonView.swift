@@ -18,15 +18,13 @@ struct ResetButtonView: View {
     }
     
     var body: some View {
-        let validedPrompts = prompts.prompts.filter { $0.isValidated }
+        let validedPrompts: [Prompt] = []
         let canReset = !validedPrompts.isEmpty
         
         return (
-            Button(action: prompts.resetAll) {
-                Text("Reset prompts")
-                    .padding()
-                    .foregroundColor(canReset ? .white : Color.init(red: 0.980, green: 0.537, blue: 0.392))
-            }
+            Text("Reset prompts")
+                .padding()
+                .foregroundColor(canReset ? .white : Color.init(red: 0.980, green: 0.537, blue: 0.392))
         )
     }
 }

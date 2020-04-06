@@ -15,7 +15,7 @@ struct ContentView: View {
             PromptListView()
             ResetButtonView()
             Spacer()
-            KeywordMatrixView()
+            TranscriptionView()
         }
         .padding()
     }
@@ -25,5 +25,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(SpeechRecognizer())
+            .environmentObject(Prompts())
     }
 }

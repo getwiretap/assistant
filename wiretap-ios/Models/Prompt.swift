@@ -8,31 +8,68 @@
 
 import Foundation
 
+
 class Prompt: Identifiable {
     
     let id: String = UUID().uuidString
     let displayText: String
-    var isValidated: Bool = false
+    let variants: [Words]
     
-    init(displayText: String) {
+    var similarityProgress: [SimilarityScores] = [(0, 0), (0, 0)]
+    
+    var isValid: Bool = false
+    var willProbablyBeValid: Bool = false
+    
+    
+    init(displayText: String, variants: [String]) {
         self.displayText = displayText
-    }
-    
-    func getConfidence(_ transcription: String) -> Int {
-        let stringMetrics = StringMetrics(origin: displayText, target: transcription)
-        
-        return stringMetrics.confidence()
+        self.variants = variants.map { Words($0) }
     }
 
-    func validate(_ transcription: String) {
-        let confidence = getConfidence(transcription)
+    
+    private func getIncompletePromptSimilarity(_ transcription: Words, wordsToRemove: Int) -> Int {
         
-        if confidence > 87 {
-            self.isValidated = true
+        var highestSimilarityScore: Int = 0
+        
+        variants.forEach { variant in
+            let incompleteVariantText = variant.substring(dropLast: wordsToRemove)
+            let transcriptionText = transcription.substring(keepLast: incompleteVariantText.count)
+            
+            let stringMetrics = StringMetrics(origin: incompleteVariantText, target: transcriptionText)
+            let similarity = stringMetrics.getSimilarity()
+
+            highestSimilarityScore = max(highestSimilarityScore, similarity)
         }
+        
+        return highestSimilarityScore
     }
     
-    func reset() {
-        isValidated = false
+    
+    private func getSimilarityScores(_ transcription: Words) -> (SimilarityScores) {
+        
+        let fullSimilarity = getIncompletePromptSimilarity(transcription, wordsToRemove: 0)
+        let minusOneSimilarity = getIncompletePromptSimilarity(transcription, wordsToRemove: 1)
+        
+        return (fullSimilarity, minusOneSimilarity)
+    }
+    
+    
+    func validate(_ transcription: Words) {
+        let similarityScores = getSimilarityScores(transcription)
+        
+        similarityProgress.insert(similarityScores, at: 0)
+        similarityProgress.removeLast()
+        
+        let (full, minusOne) = similarityScores
+        let (_, prevMinusOne) = similarityProgress[1]
+        
+        if minusOne > 85 {
+            willProbablyBeValid = true
+        }
+        
+        if full > 85 && full >= prevMinusOne {
+            isValid = true
+        }
     }
 }
+
