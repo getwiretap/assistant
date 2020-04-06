@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import wiretap_ios
+@testable import Wiretap
 
 class wiretap_iosTests: XCTestCase {
 

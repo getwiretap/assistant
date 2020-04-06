@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D433E22724382BAC00988BAE /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433E22624382BAC00988BAE /* Words.swift */; };
+		D45CF8842438334B00326495 /* WordTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CF8832438334B00326495 /* WordTestView.swift */; };
+		D45CF88A243AA7A900326495 /* PromptValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CF889243AA7A900326495 /* PromptValidation.swift */; };
+		D45CF88C243AA9E500326495 /* SimilarityScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CF88B243AA9E500326495 /* SimilarityScores.swift */; };
 		D49C3222242D7E9C00216CC1 /* StringMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C3221242D7E9C00216CC1 /* StringMetrics.swift */; };
 		D49C322B242DBAD100216CC1 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C322A242DBAD100216CC1 /* Prompts.swift */; };
 		D49C322D242DBAE100216CC1 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C322C242DBAE100216CC1 /* Prompt.swift */; };
@@ -15,9 +19,6 @@
 		D49C3235242DC31A00216CC1 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C3234242DC31A00216CC1 /* PromptView.swift */; };
 		D49C3237242DC4C300216CC1 /* PromptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C3236242DC4C300216CC1 /* PromptListView.swift */; };
 		D49C3239242DC52600216CC1 /* TranscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C3238242DC52600216CC1 /* TranscriptionView.swift */; };
-		D49C323B242DCE2D00216CC1 /* KeywordsLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C323A242DCE2D00216CC1 /* KeywordsLineView.swift */; };
-		D49C323D242DCE4E00216CC1 /* KeywordMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C323C242DCE4E00216CC1 /* KeywordMatrixView.swift */; };
-		D49C323F242DCE6500216CC1 /* KeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C323E242DCE6500216CC1 /* KeywordView.swift */; };
 		D49C3241242DD4E800216CC1 /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C3240242DD4E800216CC1 /* ResetButtonView.swift */; };
 		D4CE120B242A4D6400792910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE120A242A4D6400792910 /* AppDelegate.swift */; };
 		D4CE120D242A4D6400792910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE120C242A4D6400792910 /* SceneDelegate.swift */; };
@@ -48,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D433E22624382BAC00988BAE /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		D45CF8832438334B00326495 /* WordTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTestView.swift; sourceTree = "<group>"; };
+		D45CF889243AA7A900326495 /* PromptValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptValidation.swift; sourceTree = "<group>"; };
+		D45CF88B243AA9E500326495 /* SimilarityScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityScores.swift; sourceTree = "<group>"; };
 		D49C3221242D7E9C00216CC1 /* StringMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMetrics.swift; sourceTree = "<group>"; };
 		D49C322A242DBAD100216CC1 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		D49C322C242DBAE100216CC1 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
@@ -56,11 +61,8 @@
 		D49C3234242DC31A00216CC1 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
 		D49C3236242DC4C300216CC1 /* PromptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptListView.swift; sourceTree = "<group>"; };
 		D49C3238242DC52600216CC1 /* TranscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionView.swift; sourceTree = "<group>"; };
-		D49C323A242DCE2D00216CC1 /* KeywordsLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordsLineView.swift; sourceTree = "<group>"; };
-		D49C323C242DCE4E00216CC1 /* KeywordMatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordMatrixView.swift; sourceTree = "<group>"; };
-		D49C323E242DCE6500216CC1 /* KeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordView.swift; sourceTree = "<group>"; };
 		D49C3240242DD4E800216CC1 /* ResetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonView.swift; sourceTree = "<group>"; };
-		D4CE1207242A4D6400792910 /* wiretap-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wiretap-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CE1207242A4D6400792910 /* Wiretap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wiretap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CE120A242A4D6400792910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CE120C242A4D6400792910 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D4CE120E242A4D6400792910 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D45CF8822438331000326495 /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				D45CF8832438334B00326495 /* WordTestView.swift */,
+			);
+			path = TestViews;
+			sourceTree = "<group>";
+		};
 		D49C3227242DB9F600216CC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,30 +121,21 @@
 				D49C3234242DC31A00216CC1 /* PromptView.swift */,
 				D49C3236242DC4C300216CC1 /* PromptListView.swift */,
 				D49C3238242DC52600216CC1 /* TranscriptionView.swift */,
-				D49C323A242DCE2D00216CC1 /* KeywordsLineView.swift */,
-				D49C323C242DCE4E00216CC1 /* KeywordMatrixView.swift */,
-				D49C323E242DCE6500216CC1 /* KeywordView.swift */,
 				D49C3240242DD4E800216CC1 /* ResetButtonView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		D49C3228242DB9FF00216CC1 /* Delagates */ = {
-			isa = PBXGroup;
-			children = (
-				D4CE120A242A4D6400792910 /* AppDelegate.swift */,
-				D4CE120C242A4D6400792910 /* SceneDelegate.swift */,
-			);
-			path = Delagates;
 			sourceTree = "<group>";
 		};
 		D49C3229242DBA0A00216CC1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D49C3221242D7E9C00216CC1 /* StringMetrics.swift */,
+				D433E22624382BAC00988BAE /* Words.swift */,
 				D4CE123A242A54B200792910 /* SpeechRecognizer.swift */,
 				D49C322A242DBAD100216CC1 /* Prompts.swift */,
 				D49C322C242DBAE100216CC1 /* Prompt.swift */,
+				D45CF88B243AA9E500326495 /* SimilarityScores.swift */,
+				D45CF889243AA7A900326495 /* PromptValidation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,7 +153,7 @@
 		D4CE1208242A4D6400792910 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4CE1207242A4D6400792910 /* wiretap-ios.app */,
+				D4CE1207242A4D6400792910 /* Wiretap.app */,
 				D4CE121D242A4D6700792910 /* wiretap-iosTests.xctest */,
 				D4CE1228242A4D6700792910 /* wiretap-iosUITests.xctest */,
 			);
@@ -162,10 +163,12 @@
 		D4CE1209242A4D6400792910 /* wiretap-ios */ = {
 			isa = PBXGroup;
 			children = (
-				D49C3228242DB9FF00216CC1 /* Delagates */,
+				D45CF8822438331000326495 /* TestViews */,
 				D49C3229242DBA0A00216CC1 /* Models */,
 				D49C3227242DB9F600216CC1 /* Views */,
 				D4CE1210242A4D6700792910 /* Assets.xcassets */,
+				D4CE120A242A4D6400792910 /* AppDelegate.swift */,
+				D4CE120C242A4D6400792910 /* SceneDelegate.swift */,
 				D4CE1215242A4D6700792910 /* LaunchScreen.storyboard */,
 				D4CE1218242A4D6700792910 /* Info.plist */,
 				D4CE1212242A4D6700792910 /* Preview Content */,
@@ -216,7 +219,7 @@
 			);
 			name = "wiretap-ios";
 			productName = "wiretap-ios";
-			productReference = D4CE1207242A4D6400792910 /* wiretap-ios.app */;
+			productReference = D4CE1207242A4D6400792910 /* Wiretap.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D4CE121C242A4D6700792910 /* wiretap-iosTests */ = {
@@ -330,21 +333,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49C323B242DCE2D00216CC1 /* KeywordsLineView.swift in Sources */,
-				D49C323D242DCE4E00216CC1 /* KeywordMatrixView.swift in Sources */,
 				D4CE120B242A4D6400792910 /* AppDelegate.swift in Sources */,
+				D433E22724382BAC00988BAE /* Words.swift in Sources */,
 				D49C322D242DBAE100216CC1 /* Prompt.swift in Sources */,
 				D49C3231242DC2E600216CC1 /* BackgroundView.swift in Sources */,
 				D49C322B242DBAD100216CC1 /* Prompts.swift in Sources */,
 				D4CE123B242A54B200792910 /* SpeechRecognizer.swift in Sources */,
 				D49C3239242DC52600216CC1 /* TranscriptionView.swift in Sources */,
+				D45CF88C243AA9E500326495 /* SimilarityScores.swift in Sources */,
+				D45CF8842438334B00326495 /* WordTestView.swift in Sources */,
 				D49C3233242DC2F100216CC1 /* ContentView.swift in Sources */,
 				D4CE120D242A4D6400792910 /* SceneDelegate.swift in Sources */,
 				D49C3241242DD4E800216CC1 /* ResetButtonView.swift in Sources */,
 				D49C3237242DC4C300216CC1 /* PromptListView.swift in Sources */,
-				D49C323F242DCE6500216CC1 /* KeywordView.swift in Sources */,
 				D49C3222242D7E9C00216CC1 /* StringMetrics.swift in Sources */,
 				D49C3235242DC31A00216CC1 /* PromptView.swift in Sources */,
+				D45CF88A243AA7A900326495 /* PromptValidation.swift in Sources */,
 				D4CE120F242A4D6400792910 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +524,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.getwiretap.wiretap-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Wiretap;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,7 +544,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.getwiretap.wiretap-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Wiretap;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
