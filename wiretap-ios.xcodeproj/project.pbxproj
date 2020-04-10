@@ -3,14 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94468F397CC43F28CBD038DE /* Pods_wiretap_ios_wiretap_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDDD531C6B0D4777E00078C /* Pods_wiretap_ios_wiretap_iosUITests.framework */; };
+		9F4967EFA8C319051DFEEE01 /* Pods_wiretap_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E825490B8E59DD83222DEFD /* Pods_wiretap_ios.framework */; };
+		D41AB508243F737F002E4EED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D41AB507243F737F002E4EED /* GoogleService-Info.plist */; };
+		D42C8094243F771500D59224 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C8093243F771500D59224 /* Session.swift */; };
 		D433E22724382BAC00988BAE /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433E22624382BAC00988BAE /* Words.swift */; };
 		D45CF8842438334B00326495 /* WordTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CF8832438334B00326495 /* WordTestView.swift */; };
 		D45CF88A243AA7A900326495 /* PromptValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CF889243AA7A900326495 /* PromptValidation.swift */; };
 		D45CF88C243AA9E500326495 /* SimilarityScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CF88B243AA9E500326495 /* SimilarityScores.swift */; };
+		D46E03112440F01F00FD8144 /* DeviceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E03102440F01F00FD8144 /* DeviceInformation.swift */; };
 		D49C3222242D7E9C00216CC1 /* StringMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C3221242D7E9C00216CC1 /* StringMetrics.swift */; };
 		D49C322B242DBAD100216CC1 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C322A242DBAD100216CC1 /* Prompts.swift */; };
 		D49C322D242DBAE100216CC1 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C322C242DBAE100216CC1 /* Prompt.swift */; };
@@ -29,6 +34,7 @@
 		D4CE1222242A4D6700792910 /* wiretap_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE1221242A4D6700792910 /* wiretap_iosTests.swift */; };
 		D4CE122D242A4D6700792910 /* wiretap_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE122C242A4D6700792910 /* wiretap_iosUITests.swift */; };
 		D4CE123B242A54B200792910 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE123A242A54B200792910 /* SpeechRecognizer.swift */; };
+		ED6E5C49C8651940823D08EE /* Pods_wiretap_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C41F48218499419950EA70 /* Pods_wiretap_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +55,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DDDD531C6B0D4777E00078C /* Pods_wiretap_ios_wiretap_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wiretap_ios_wiretap_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F2C3C94D26DC376EDE8939 /* Pods-wiretap-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiretap-ios.release.xcconfig"; path = "Target Support Files/Pods-wiretap-ios/Pods-wiretap-ios.release.xcconfig"; sourceTree = "<group>"; };
+		3AEE1183C7E617F1951E2426 /* Pods-wiretap-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiretap-iosTests.release.xcconfig"; path = "Target Support Files/Pods-wiretap-iosTests/Pods-wiretap-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		48F6AE83BBC23A058596EB28 /* Pods-wiretap-ios-wiretap-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiretap-ios-wiretap-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-wiretap-ios-wiretap-iosUITests/Pods-wiretap-ios-wiretap-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		701E6D93056CFD48B9BC9875 /* Pods-wiretap-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiretap-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-wiretap-iosTests/Pods-wiretap-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98C41F48218499419950EA70 /* Pods_wiretap_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wiretap_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E825490B8E59DD83222DEFD /* Pods_wiretap_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wiretap_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B406A35F89DCCC5C97DEBD32 /* Pods-wiretap-ios-wiretap-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiretap-ios-wiretap-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-wiretap-ios-wiretap-iosUITests/Pods-wiretap-ios-wiretap-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D41AB507243F737F002E4EED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D42C8093243F771500D59224 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D433E22624382BAC00988BAE /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		D45CF8832438334B00326495 /* WordTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTestView.swift; sourceTree = "<group>"; };
 		D45CF889243AA7A900326495 /* PromptValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptValidation.swift; sourceTree = "<group>"; };
 		D45CF88B243AA9E500326495 /* SimilarityScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityScores.swift; sourceTree = "<group>"; };
+		D46E03102440F01F00FD8144 /* DeviceInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformation.swift; sourceTree = "<group>"; };
 		D49C3221242D7E9C00216CC1 /* StringMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMetrics.swift; sourceTree = "<group>"; };
 		D49C322A242DBAD100216CC1 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		D49C322C242DBAE100216CC1 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
@@ -77,6 +94,7 @@
 		D4CE122C242A4D6700792910 /* wiretap_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wiretap_iosUITests.swift; sourceTree = "<group>"; };
 		D4CE122E242A4D6700792910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CE123A242A54B200792910 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		F17B4440D5C59D6E9E9B79A4 /* Pods-wiretap-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiretap-ios.debug.xcconfig"; path = "Target Support Files/Pods-wiretap-ios/Pods-wiretap-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4967EFA8C319051DFEEE01 /* Pods_wiretap_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6E5C49C8651940823D08EE /* Pods_wiretap_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94468F397CC43F28CBD038DE /* Pods_wiretap_ios_wiretap_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C408A98FB9F9B52680BD10E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E825490B8E59DD83222DEFD /* Pods_wiretap_ios.framework */,
+				0DDDD531C6B0D4777E00078C /* Pods_wiretap_ios_wiretap_iosUITests.framework */,
+				98C41F48218499419950EA70 /* Pods_wiretap_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D45CF8822438331000326495 /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +167,8 @@
 				D49C322C242DBAE100216CC1 /* Prompt.swift */,
 				D45CF88B243AA9E500326495 /* SimilarityScores.swift */,
 				D45CF889243AA7A900326495 /* PromptValidation.swift */,
+				D42C8093243F771500D59224 /* Session.swift */,
+				D46E03102440F01F00FD8144 /* DeviceInformation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +180,8 @@
 				D4CE1220242A4D6700792910 /* wiretap-iosTests */,
 				D4CE122B242A4D6700792910 /* wiretap-iosUITests */,
 				D4CE1208242A4D6400792910 /* Products */,
+				EC1A709DB055C5F128F23EE9 /* Pods */,
+				8C408A98FB9F9B52680BD10E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +206,7 @@
 				D4CE120C242A4D6400792910 /* SceneDelegate.swift */,
 				D4CE1215242A4D6700792910 /* LaunchScreen.storyboard */,
 				D4CE1218242A4D6700792910 /* Info.plist */,
+				D41AB507243F737F002E4EED /* GoogleService-Info.plist */,
 				D4CE1212242A4D6700792910 /* Preview Content */,
 			);
 			path = "wiretap-ios";
@@ -202,6 +238,19 @@
 			path = "wiretap-iosUITests";
 			sourceTree = "<group>";
 		};
+		EC1A709DB055C5F128F23EE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F17B4440D5C59D6E9E9B79A4 /* Pods-wiretap-ios.debug.xcconfig */,
+				11F2C3C94D26DC376EDE8939 /* Pods-wiretap-ios.release.xcconfig */,
+				B406A35F89DCCC5C97DEBD32 /* Pods-wiretap-ios-wiretap-iosUITests.debug.xcconfig */,
+				48F6AE83BBC23A058596EB28 /* Pods-wiretap-ios-wiretap-iosUITests.release.xcconfig */,
+				701E6D93056CFD48B9BC9875 /* Pods-wiretap-iosTests.debug.xcconfig */,
+				3AEE1183C7E617F1951E2426 /* Pods-wiretap-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4CE1231242A4D6700792910 /* Build configuration list for PBXNativeTarget "wiretap-ios" */;
 			buildPhases = (
+				28FBC637A291D6DBE9B1CB2E /* [CP] Check Pods Manifest.lock */,
 				D4CE1203242A4D6400792910 /* Sources */,
 				D4CE1204242A4D6400792910 /* Frameworks */,
 				D4CE1205242A4D6400792910 /* Resources */,
+				1B2EBADE7AA0B59C6B683DCB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4CE1234242A4D6700792910 /* Build configuration list for PBXNativeTarget "wiretap-iosTests" */;
 			buildPhases = (
+				EF9BD230EAD2068A0A741896 /* [CP] Check Pods Manifest.lock */,
 				D4CE1219242A4D6700792910 /* Sources */,
 				D4CE121A242A4D6700792910 /* Frameworks */,
 				D4CE121B242A4D6700792910 /* Resources */,
@@ -244,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4CE1237242A4D6700792910 /* Build configuration list for PBXNativeTarget "wiretap-iosUITests" */;
 			buildPhases = (
+				C516659F0684CABE47C5F6C6 /* [CP] Check Pods Manifest.lock */,
 				D4CE1224242A4D6700792910 /* Sources */,
 				D4CE1225242A4D6700792910 /* Frameworks */,
 				D4CE1226242A4D6700792910 /* Resources */,
+				D970F354847B646A4720D19C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CE1217242A4D6700792910 /* LaunchScreen.storyboard in Resources */,
+				D41AB508243F737F002E4EED /* GoogleService-Info.plist in Resources */,
 				D4CE1214242A4D6700792910 /* Preview Assets.xcassets in Resources */,
 				D4CE1211242A4D6700792910 /* Assets.xcassets in Resources */,
 			);
@@ -328,6 +383,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B2EBADE7AA0B59C6B683DCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wiretap-ios/Pods-wiretap-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wiretap-ios/Pods-wiretap-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wiretap-ios/Pods-wiretap-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28FBC637A291D6DBE9B1CB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wiretap-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C516659F0684CABE47C5F6C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wiretap-ios-wiretap-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D970F354847B646A4720D19C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wiretap-ios-wiretap-iosUITests/Pods-wiretap-ios-wiretap-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wiretap-ios-wiretap-iosUITests/Pods-wiretap-ios-wiretap-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wiretap-ios-wiretap-iosUITests/Pods-wiretap-ios-wiretap-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9BD230EAD2068A0A741896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wiretap-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4CE1203242A4D6400792910 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -339,6 +497,7 @@
 				D49C3231242DC2E600216CC1 /* BackgroundView.swift in Sources */,
 				D49C322B242DBAD100216CC1 /* Prompts.swift in Sources */,
 				D4CE123B242A54B200792910 /* SpeechRecognizer.swift in Sources */,
+				D42C8094243F771500D59224 /* Session.swift in Sources */,
 				D49C3239242DC52600216CC1 /* TranscriptionView.swift in Sources */,
 				D45CF88C243AA9E500326495 /* SimilarityScores.swift in Sources */,
 				D45CF8842438334B00326495 /* WordTestView.swift in Sources */,
@@ -349,6 +508,7 @@
 				D49C3222242D7E9C00216CC1 /* StringMetrics.swift in Sources */,
 				D49C3235242DC31A00216CC1 /* PromptView.swift in Sources */,
 				D45CF88A243AA7A900326495 /* PromptValidation.swift in Sources */,
+				D46E03112440F01F00FD8144 /* DeviceInformation.swift in Sources */,
 				D4CE120F242A4D6400792910 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +672,7 @@
 		};
 		D4CE1232242A4D6700792910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17B4440D5C59D6E9E9B79A4 /* Pods-wiretap-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.getwiretap.wiretap-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getwiretap.wiretap-ios-dev";
 				PRODUCT_NAME = Wiretap;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,6 +693,7 @@
 		};
 		D4CE1233242A4D6700792910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F2C3C94D26DC376EDE8939 /* Pods-wiretap-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.getwiretap.wiretap-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getwiretap.wiretap-ios-dev";
 				PRODUCT_NAME = Wiretap;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,6 +714,7 @@
 		};
 		D4CE1235242A4D6700792910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701E6D93056CFD48B9BC9875 /* Pods-wiretap-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +737,7 @@
 		};
 		D4CE1236242A4D6700792910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AEE1183C7E617F1951E2426 /* Pods-wiretap-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +760,7 @@
 		};
 		D4CE1238242A4D6700792910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B406A35F89DCCC5C97DEBD32 /* Pods-wiretap-ios-wiretap-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +781,7 @@
 		};
 		D4CE1239242A4D6700792910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F6AE83BBC23A058596EB28 /* Pods-wiretap-ios-wiretap-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

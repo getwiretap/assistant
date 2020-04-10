@@ -27,6 +27,8 @@ struct PromptView: View {
         let looksValid = prompt.willProbablyBeValid || prompt.isValid
         let imageName = looksValid ? "checkmark.circle" : "questionmark.circle"
         
+        print(UIDevice.current.identifierForVendor?.uuidString)
+        
         return (
             
             HStack {

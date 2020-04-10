@@ -9,15 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var session: Session
+    
     var body: some View {
-        
         VStack {
-            PromptListView()
-            ResetButtonView()
+            Spacer()
+            Text(session.isConnected ? "connected" : "not-connected")
             Spacer()
             TranscriptionView()
         }
         .padding()
+    }
+    
+    func isAuthenticated() -> Bool {
+        session.uid != "null"
     }
 }
 
@@ -25,6 +31,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(SpeechRecognizer())
-            .environmentObject(Prompts())
+            .environmentObject(Session())
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BackgroundView: View {
     var body: some View {
-        Color.init(red: 0.980, green: 0.537, blue: 0.392)
+        Color.init(.white)
             .edgesIgnoringSafeArea(.all)
     }
 }
