@@ -8,6 +8,10 @@ target 'wiretap-ios' do
   # Pods for wiretap-ios
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+
+  pod 'Starscream'
+
 
   target 'wiretap-iosTests' do
     inherit! :search_paths

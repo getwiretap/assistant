@@ -10,8 +10,7 @@ import Speech
 
 
 public class SpeechRecognizer: ObservableObject {
-    // MARK: Properties
-    
+
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     private let audioEngine = AVAudioEngine()
     
@@ -20,7 +19,7 @@ public class SpeechRecognizer: ObservableObject {
     
     @Published var isMicEnabled = false
     @Published var isRecording = false
-    @Published var transcription = Words("")
+    @Published var transcription = ""
     
     
     func requestPermission() {
@@ -66,11 +65,14 @@ public class SpeechRecognizer: ObservableObject {
         // Create a recognition task for the speech recognition session.
         // Keep a reference to the task so that it can be canceled.
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
+            
+            self.isRecording = true
+            
             var isFinal = false
             
             if let result = result {
 
-                self.transcription = Words(result.bestTranscription.formattedString)
+                self.transcription = result.bestTranscription.formattedString
                 
                 isFinal = result.isFinal
             }
@@ -85,7 +87,7 @@ public class SpeechRecognizer: ObservableObject {
                 self.recognitionTask = nil
 
                 self.isRecording = false
-                self.transcription = Words("")
+                self.transcription = ""
             }
         }
 
@@ -113,16 +115,7 @@ public class SpeechRecognizer: ObservableObject {
         }
     }
 
-    func toggleRecording() {
-        if audioEngine.isRunning {
-          stopRecording()
-        } else {
-            do {
-                try startRecording()
-                isRecording = true
-            } catch {
-                isRecording = false
-            }
-        }
+    func clearTranscription() {
+        transcription = ""
     }
 }

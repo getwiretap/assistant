@@ -22,12 +22,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         let rootView = RootView()
             .environmentObject(SpeechRecognizer())
-            .environmentObject(Session())
+            .environmentObject(Authentication())
+            .environmentObject(User())
+            .environmentObject(Device())
+            .environmentObject(Prompts())
+            .environmentObject(Cashiers())
+            .environmentObject(Ticket())
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: rootView)
+            window.rootViewController = UIHostingController(rootView: AnyView(rootView))
             self.window = window
             window.makeKeyAndVisible()
         }
